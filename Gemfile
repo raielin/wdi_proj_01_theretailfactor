@@ -49,11 +49,11 @@ gem 'devise'
 gem 'httparty'
 
 group :development, :test do
-  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
-  gem 'pry-byebug' # specified Pry for debugger
-
   # Enable Pry console in Rails app
   gem 'pry-rails'
+
+  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
+  gem 'pry-byebug' # specified Pry for debugger
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0.0.beta4'
