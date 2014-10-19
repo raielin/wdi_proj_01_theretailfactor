@@ -37,7 +37,7 @@ gem 'rails_12factor', group: :production
 # gem 'capistrano-rails', group: :development
 
 # Allows for loading of environment variables from .env into ENV in development
-gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Zillow API wrapper
 gem 'rubillow'
