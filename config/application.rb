@@ -16,7 +16,7 @@ Bundler.require(*Rails.groups)
 
 Dotenv::Railtie.load
 
-ZILLOW_KEY = ENV['ZILLOW_KEY']
+ZILLOW_KEY = ENV["ZILLOW_KEY"]
 
 module ZillowApp
   class Application < Rails::Application
