@@ -36,6 +36,18 @@ gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Allows for loading of environment variables from .env into ENV in development
+gem 'dotenv-rails', :groups => [:development, :test], :require => 'dotenv/rails-now'
+
+# Zillow API wrapper
+gem 'rubillow'
+
+# Required for user authentication
+gem 'devise'
+
+# For API data retrieval and converting XML to JSON
+gem 'httparty'
+
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug' # specified Pry for debugger
@@ -48,20 +60,4 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-
-  # Allows for loading of environment variables from .env into ENV in development
-  gem 'dotenv-rails', :require => 'dotenv/rails-now'
 end
-
-
-#-- PROJECT-SPECIFIC GEMS
-
-# Required for user authentication
-gem 'devise'
-
-# Zillow API wrapper
-gem 'rubillow'
-
-# For API data retrieval and converting XML to JSON
-gem 'httparty'
-
