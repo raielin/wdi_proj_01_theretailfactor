@@ -50,7 +50,7 @@ group :development, :test do
   gem 'spring'
 
   # Allows for loading of environment variables from .env into ENV in development
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', :require => 'dotenv/rails-now'
 end
 
 
