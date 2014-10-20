@@ -112,7 +112,7 @@ Rubillow::HomeValuation
 Rubillow::Neighborhood
   .demographics
     --  retrieve demo data for given region
-    --  requires, at least regionid, OR state+city, OR city+neighborhood, OR zip
+    --  requires, at least regionid, OR state+city, city+neighborhood, OR zip
           :regionid (string)
           :state (string)
           :city (string)
