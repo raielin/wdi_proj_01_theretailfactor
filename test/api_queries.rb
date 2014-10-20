@@ -10,13 +10,16 @@ end
 
 property = Rubillow::HomeValuation.zestimate({ :zpid => '48749425' })
 
-binding.pry
-
 if property.success?
   puts property.price
 else
   puts false
 end
 
-binding.pry
 
+
+demos = Rubillow::Neighborhood.demographics({ state: "WA", city: "Seattle", neighborhood: "Ballard"})
+
+if demos.success?
+  puts demos.charts['Median Home Value']
+  puts demos.links['forSale']

@@ -5,25 +5,106 @@ Rubillow::HomeValuation
   .search_results
     --  retrieve prop by address.
     --  requires
-          :address (string)
+          :address (string, URL encoded)
           :citystatezip (string - city+state AND/OR zip)
+    --  returns
+          :zpid
+          :links
+              /homedetails
+              /graphsanddata
+              /mapthishome
+              /comparables
+          :address
+              /street
+              /zipcode
+              /city
+              /state
+              /latitude
+              /longitude
+          :zestimate
+              /amount (dollars)
+              /last-updated
+          :localRealEstate (for neighborhood, city, and state)
+              /region (:id :type :name)
+                  .zindexValue (Home Value Index)
+                  .zindexOneYearChange
+                  .links
+                    overview
+                    forSaleByOwner
+                    forSale
+
 
   .zestimate
     --  retrieve zestimate for specified prop.
     --  requires
           :zpid (integer)
+    --  returns
+          :zpid
+          :links
+              /homedetails
+              /graphsanddata
+              /mapthishome
+              /comparables
+          :address
+              /street
+              /zipcode
+              /city
+              /state
+              /latitude
+              /longitude
+          :zestimate
+              /amount (dollars)
+              /last-updated
+          :localRealEstate (for neighborhood, city, and state)
+              /region (:id :type :name)
+                  .zindexValue (Home Value Index)
+                  .zindexOneYearChange
+                  .links
+                    overview
+                    forSaleByOwner
+                    forSale
 
   .chart
     --  retrieve chart for specified prop.
     --  requires
           :zpid (integer)
           :unit_type (string - 'percent' or 'dollar')
+    --  returns
+          :url (link to chart)
 
   .comps
     --  retrieve list of comps for specified prop.
     --  requires
           :zpid
           :count (integer - no. of comps to return, b/t 1..25 inclusive)
+    --  returns (for target property: :principal and comp   results: :comparables)
+          :comp (:score) (for comparables only - indicates how close the comp is to the target prop. can sort by relevance with 0 being most relevant.)
+          :zpid
+          :links
+              /homedetails
+              /graphsanddata
+              /mapthishome
+              /comparables
+          :address
+              /street
+              /zipcode
+              /city
+              /state
+              /latitude
+              /longitude
+          :zestimate
+              /amount (dollars)
+              /last-updated
+          :localRealEstate (for neighborhood, city, and state)
+              /region (:id :type :name)
+                  .zindexValue (Home Value Index)
+                  .zindexOneYearChange
+                  .links
+                    overview
+                    forSaleByOwner
+                    forSale
+
+
 
 *** NEIGHBORHOOD / DEMOS ***
   /lib/rubillow/neighborhood.rb
@@ -37,6 +118,40 @@ Rubillow::Neighborhood
           :city (string)
           :neighborhood (string)
           :zip (string)
+    -- returns
+          :region
+              /id
+              /state
+              /city
+              /neighborhood
+              /latitude
+              /longitude
+          :links
+              /main (link to region page)
+              /affordability
+              /homesandrealestate
+              /people
+              /forSale
+              /forSaleByOwner
+              /foreclosures
+              /recentlySold
+          :charts
+              /chart (:name :url)
+                  Median Condo Value
+                  Median Home Value
+                  Dollars Per Square Feet
+                  Home Value Index Distribution
+                  Home Type
+                  Owners vs. Renters
+                  Home Size in Square Feet
+                  Year Built
+          :local market data
+          :affordability info
+          :homes and RE data (attributes of homes in city or neighborhood)
+          :people data (census attributes)
+          :who lives here (primary groups of pple in this neighborhood)
+          :what's unique about the people (population characteristics)
+
 
   .region_children
     --  retrieve sub-regions for a region
