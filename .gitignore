@@ -10,4 +10,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore environment config files
 .env
+*/.env
