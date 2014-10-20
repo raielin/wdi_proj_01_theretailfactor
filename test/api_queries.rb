@@ -8,13 +8,13 @@ Rubillow.configure do |configuration|
   configuration.zwsid = ENV['ZILLOW_KEY']
 end
 
-property = Rubillow::HomeValuation.zestimate({ :zpid => '48749425' })
+# property = Rubillow::HomeValuation.zestimate({ :zpid => '48749425' })
 
-if property.success?
-  puts property.price
-else
-  puts false
-end
+# if property.success?
+#   puts property.price
+# else
+#   puts false
+# end
 
 
 
@@ -22,4 +22,6 @@ demos = Rubillow::Neighborhood.demographics({ state: "WA", city: "Seattle", neig
 
 if demos.success?
   puts demos.charts['Median Home Value']
-  puts demos.links['forSale']
+else
+  puts false
+end
