@@ -6,4 +6,6 @@
 * Creating new branch 'models' to work on creating models and establishing correct associations.
 
 
-
+--- 10/21/14 @ 11:54 AM ----
+* On models branch.
+* Working on creating models and establishing correct associations.
