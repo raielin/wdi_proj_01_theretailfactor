@@ -21,13 +21,21 @@ The next scroll reveals a brief explanation of the site and why it's worth tryin
 
 The third scroll prompts Jackie to get started on her search. A self-explanatory form with just a brief heading provides Jackie with enough direction to enter the correct locational search parameters.
 
+  Target Search Area Fields
+      Address (requires: zipcode OR city+state) (require city or zipcode only - nice-to-have)
+        Street
+        City
+        State
+        Zipcode
+        Nieghborhood (dropdown - nice-to-have)
+
 She submits her parameters and a new page loads confirming the params she entered, along with a list of all the Anthro locations within a certain radius (nice-to-have: map of locations).
 
 Additional directions on this page instruct her to select a single Anthro location, around which to center her property search.
 
 Jackie selects her desired Anthro location and a new section of the page loads below which asks her for any basic property search parameters.
 
-  Property search parameters
+  Property Search Fields
     Distance from Anthro (default is 5 miles)
     Size Range
     Price Range
@@ -172,6 +180,8 @@ The page has the following in formation:
 - Option to show more than 15 results per page
 - Sign in as different user link in navigation
 - Heart icon animation for saving and removing a property.
+- Dropdown menu for Neighborhood selection in Target Search Area parameters to be populated by Zillow query based on city+state or zipcode entry.
+- State field in Target Search Area form is autopopulated when user types in a city.
 
 
 
