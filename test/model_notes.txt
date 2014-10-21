@@ -30,8 +30,6 @@ LIST OF MODELS & THEIR DATA FIELDS
 ** TARGET **
 :id
 :location
-:longitude
-:latitude
 
 ** MARKET **
 :id
@@ -48,3 +46,21 @@ QUESTIONS TO WORK THROUGH
     :neighborhood
 
   Then give market.area and target.location an address value as submitted by the user? So Address doesn't ever actually save anything - just passes its structure and supplied values to the correct model fields?
+
+  So market.area & target.location = [
+    street="street_string",
+    city="city_string",
+    state="state_string",
+    zipcode="zipcode_string",
+    neighborhood="neighborhood_string"
+    longitude=long_float
+    latitude=lat_float
+  ]
+
+  Required values:
+    city+state OR zipcode
+
+  Longitude and Latitude values returned by running geocoder process.
+
+  >> Look up how to set parameter requirements as an either-or.
+
