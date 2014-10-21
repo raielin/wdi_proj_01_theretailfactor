@@ -182,6 +182,7 @@ The page has the following in formation:
 - Heart icon animation for saving and removing a property.
 - Dropdown menu for Neighborhood selection in Target Search Area parameters to be populated by Zillow query based on city+state or zipcode entry.
 - State field in Target Search Area form is autopopulated when user types in a city.
+- Ability to edit saved searches. Generate Updated At date.
 
 
 

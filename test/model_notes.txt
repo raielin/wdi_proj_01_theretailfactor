@@ -35,6 +35,11 @@ LIST OF MODELS & THEIR DATA FIELDS
 :id
 :area
 
+** PROPERTY **
+:id
+:user_id
+:zpid
+
 
 QUESTIONS TO WORK THROUGH
 ================================================
@@ -60,7 +65,21 @@ QUESTIONS TO WORK THROUGH
   Required values:
     city+state OR zipcode
 
-  Longitude and Latitude values returned by running geocoder process.
+  Have longitude and latitude values returned by running geocoder process?
 
   >> Look up how to set parameter requirements as an either-or.
+  >> Need to find a geocoder gem.
+
+
+ASSOCIATIONS
+================================================
+https://docs.google.com/drawings/d/1TJ3znDtEZdmHfY1-UrZU4xTwd9SIDYrlGYYNCKXC7Mw/edit?usp=sharing
+
+
+
+
+
+
+review: http://hashrocket.com/blog/posts/sql-views-and-activerecord
+
 
