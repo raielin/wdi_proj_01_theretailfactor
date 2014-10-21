@@ -1,0 +1,50 @@
+LIST OF MODELS & THEIR DATA FIELDS
+================================================
+
+** USER **
+:id
+:first_name
+:last_name
+:username
+:password
+:email
+:profile_pic
+
+** SEARCH **
+:id
+:user_id
+:propcriteria_id
+:target_id
+:market_id
+
+** PROPCRITERIA **
+:id
+:radius_limit
+:sf_min
+:sf_max
+:bed_min
+:bed_max
+:bath_min
+:bath_max
+
+** TARGET **
+:id
+:location
+:longitude
+:latitude
+
+** MARKET **
+:id
+:area
+
+
+QUESTIONS TO WORK THROUGH
+================================================
+? Define Address as an array with elements:
+    :street
+    :city
+    :state
+    :zipcode
+    :neighborhood
+
+  Then give market.area and target.location an address value as submitted by the user? So Address doesn't ever actually save anything - just passes its structure and supplied values to the correct model fields?
