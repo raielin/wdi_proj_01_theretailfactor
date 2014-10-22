@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141022165710) do
+ActiveRecord::Schema.define(version: 20141022163744) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20141022165710) do
     t.text     "city"
     t.text     "state"
     t.text     "zip"
+    t.text     "description"
+    t.text     "name"
   end
 
   add_index "searches", ["user_id"], name: "index_searches_on_user_id", using: :btree
