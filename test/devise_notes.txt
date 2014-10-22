@@ -18,4 +18,8 @@ CREATE VALIDATIONS FOR USERNAME IN USER MODEL
 
 CHANGE INVALID ERROR MSG
 --------------------------------------------------------------
-  change the login label from “invalid: email or password to invalid: login or password in “config/locales/devise.en.yml”
+  Change the login label from “invalid: email or password to invalid: login or password in “config/locales/devise.en.yml”.
+
+ADD INSTRUCTIONAL MESSAGE FOR LOGIN FORM FIELDS
+--------------------------------------------------------------
+  Default temp text in login form fields should say 'username or email'.
