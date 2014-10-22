@@ -1,0 +1,10 @@
+
+IF USING LOGIN VIRTUAL ATTRIBUTE FOR USER AUTH OUTSIDE OF USER MODEL, USE CODE:
+
+  def login=(login)
+    @login = login
+  end
+
+  def login
+    @login || self.username || self.email
+  end
