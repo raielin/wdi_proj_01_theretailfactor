@@ -12,14 +12,19 @@ OUTSIDE OF USER MODEL, USE CODE:
     end
   ```
 
-CREATE VALIDATIONS FOR USERNAME IN USER MODEL
---------------------------------------------------------------
-  `validates :username, presence: true, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }`
-
 
 CHANGE INVALID ERROR MSG
 --------------------------------------------------------------
-  Change the login label from “invalid: email or password to invalid: login or password in “config/locales/devise.en.yml”.
+  Change the login label from “invalid: email or password" to "invalid: login or password" in config/locales/devise.en.yml.
+
+
+==============================================================
+COMPLETED
+==============================================================
+
+CREATE VALIDATIONS FOR USERNAME IN USER MODEL
+--------------------------------------------------------------
+  `validates :username, presence: true, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }`
 
 
 ADD INSTRUCTIONAL MESSAGE FOR LOGIN FORM FIELDS
