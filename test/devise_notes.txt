@@ -2,15 +2,20 @@
 IF USING LOGIN VIRTUAL ATTRIBUTE FOR USER AUTH
 OUTSIDE OF USER MODEL, USE CODE:
 --------------------------------------------------------------
-  def login=(login)
-    @login = login
-  end
+  ```
+    def login=(login)
+      @login = login
+    end
 
-  def login
-    @login || self.username || self.email
-  end
-
+    def login
+      @login || self.username || self.email
+    end
+  ```
 
 CREATE VALIDATIONS FOR USERNAME IN USER MODEL
 --------------------------------------------------------------
-  validates :username, presence: true, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }
+  `validates :username, presence: true, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }`
+
+CHANGE INVALID ERROR MSG
+--------------------------------------------------------------
+  change the login label from “invalid: email or password to invalid: login or password in “config/locales/devise.en.yml”
