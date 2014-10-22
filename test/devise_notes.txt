@@ -16,10 +16,17 @@ CREATE VALIDATIONS FOR USERNAME IN USER MODEL
 --------------------------------------------------------------
   `validates :username, presence: true, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }`
 
+
 CHANGE INVALID ERROR MSG
 --------------------------------------------------------------
   Change the login label from “invalid: email or password to invalid: login or password in “config/locales/devise.en.yml”.
 
+
 ADD INSTRUCTIONAL MESSAGE FOR LOGIN FORM FIELDS
 --------------------------------------------------------------
   Default temp text in login form fields should say 'username or email'.
+
+
+ADD CODE TO RECOVER PASSWORD
+OR CONFIRM ACCOUNT WITH USERNAME OR EMAIL --------------------------------------------------------------
+  https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address#allow-users-to-recover-their-password-or-confirm-their-account-using-either-username-or-email-address
