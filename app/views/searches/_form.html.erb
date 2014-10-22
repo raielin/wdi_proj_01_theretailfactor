@@ -1,9 +1,20 @@
 <%= form_for @search do |f| %>
-  <%= f.label :city %>
-  <%= f.text_area :city %>
-  <%= f.label :state %>
-  <%= f.text_area :state %>
-  <%= f.label :zip %>
-  <%= f.text_area :zip %>
-  <%= f.submit %>
+  <div class="field">
+    <%= f.label :city %>
+    <%= f.text_area :city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :state %>
+    <%= f.text_area :state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zip %>
+    <%= f.text_area :zip %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
