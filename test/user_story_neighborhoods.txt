@@ -16,3 +16,4 @@ NICE TO HAVE:
 * Show some basic demo info for each neighborhood in index view
 * Provide 'save' button for each neighborhood directly in index view.
 * Map of neighborhoods
+* Validations of input fields

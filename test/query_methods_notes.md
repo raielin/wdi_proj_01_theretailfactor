@@ -1,3 +1,65 @@
+*** NEIGHBORHOOD / DEMOS ***
+  /lib/rubillow/neighborhood.rb
+
+Rubillow::Neighborhood
+  .demographics
+    --  retrieve demo data for given region
+    --  requires, at least regionid, OR state+city, city+neighborhood, OR zip
+          :regionid (string)
+          :state (string)
+          :city (string)
+          :neighborhood (string)
+          :zip (string)
+    -- returns
+          :region
+              /id
+              /state
+              /city
+              /neighborhood
+              /latitude
+              /longitude
+          :links
+              /main (link to region page)
+              /affordability
+              /homesandrealestate
+              /people
+              /forSale
+              /forSaleByOwner
+              /foreclosures
+              /recentlySold
+          :charts
+              /chart (:name :url)
+                  Median Condo Value
+                  Median Home Value
+                  Dollars Per Square Feet
+                  Home Value Index Distribution
+                  Home Type
+                  Owners vs. Renters
+                  Home Size in Square Feet
+                  Year Built
+          :local market data
+          :affordability info
+          :homes and RE data (attributes of homes in city or neighborhood)
+          :people data (census attributes)
+          :who lives here (primary groups of pple in this neighborhood)
+          :what's unique about the people (population characteristics)
+
+
+  .region_children
+    --  retrieve sub-regions for a region
+    --  requires, at least regionid OR state
+          :regionid (string)
+          :state (string)
+    --  options
+          :county (string)
+          :city (string)
+          :childtype (string - types of regions to retrieve, i.e. 'state', 'county', 'city', 'zipcode', and 'neighborhood')
+
+  .region_chart
+    --  retrieve chart for specified region
+    --  requires
+          :unit_type (string - 'percent' or 'dollar')
+
 *** HOME VALUATION ****
   /lib/rubillow/home_valuation.rb
 
@@ -103,70 +165,6 @@ Rubillow::HomeValuation
                     overview
                     forSaleByOwner
                     forSale
-
-
-
-*** NEIGHBORHOOD / DEMOS ***
-  /lib/rubillow/neighborhood.rb
-
-Rubillow::Neighborhood
-  .demographics
-    --  retrieve demo data for given region
-    --  requires, at least regionid, OR state+city, city+neighborhood, OR zip
-          :regionid (string)
-          :state (string)
-          :city (string)
-          :neighborhood (string)
-          :zip (string)
-    -- returns
-          :region
-              /id
-              /state
-              /city
-              /neighborhood
-              /latitude
-              /longitude
-          :links
-              /main (link to region page)
-              /affordability
-              /homesandrealestate
-              /people
-              /forSale
-              /forSaleByOwner
-              /foreclosures
-              /recentlySold
-          :charts
-              /chart (:name :url)
-                  Median Condo Value
-                  Median Home Value
-                  Dollars Per Square Feet
-                  Home Value Index Distribution
-                  Home Type
-                  Owners vs. Renters
-                  Home Size in Square Feet
-                  Year Built
-          :local market data
-          :affordability info
-          :homes and RE data (attributes of homes in city or neighborhood)
-          :people data (census attributes)
-          :who lives here (primary groups of pple in this neighborhood)
-          :what's unique about the people (population characteristics)
-
-
-  .region_children
-    --  retrieve sub-regions for a region
-    --  requires, at least regionid OR state
-          :regionid (string)
-          :state (string)
-    --  options
-          :county (string)
-          :city (string)
-          :childtype (string - types of regions to retrieve, i.e. 'state', 'county', 'city', 'zipcode', and 'neighborhood')
-
-  .region_chart
-    --  retrieve chart for specified region
-    --  requires
-          :unit_type (string - 'percent' or 'dollar')
 
 *** POSTINGS ***
   /lib/rubillow/postings.rb
