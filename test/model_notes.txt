@@ -74,6 +74,7 @@ QUESTIONS TO WORK THROUGH
     >> Look up how to set parameter requirements as an either-or.
     >> Need to find a geocoder gem.
 
+
 ? Use inclusion in models
 
 
@@ -82,10 +83,7 @@ ASSOCIATIONS
 Diagram of models & associations: https://docs.google.com/drawings/d/1TJ3znDtEZdmHfY1-UrZU4xTwd9SIDYrlGYYNCKXC7Mw/edit?usp=sharing
 
 
-
-
-
-
-review: http://hashrocket.com/blog/posts/sql-views-and-activerecord
+COME BACK TO THIS
+has_one view: http://hashrocket.com/blog/posts/sql-views-and-activerecord
 
 
