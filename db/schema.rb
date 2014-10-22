@@ -26,7 +26,14 @@ ActiveRecord::Schema.define(version: 20141022021542) do
   end
 
   create_table "searches", force: true do |t|
+    t.integer  "user_id"
+    t.text     "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
+
+  add_index "searches", ["user_id"], name: "index_searches_on_user_id", using: :btree
 
   create_table "targets", force: true do |t|
   end
