@@ -6,6 +6,11 @@
 * Creating new branch 'models' to work on creating models and establishing correct associations.
 
 
---- 10/21/14 @ 11:54 AM ----
+---- 10/21/14 @ 11:54 AM ----
 * On models branch.
 * Working on creating models and establishing correct associations.
+
+
+---- 10/22/14 @ 11:05 AM ----
+* Got simple devise user model and devise views working. Going to merge into master branch and deploy to heroko.
+
