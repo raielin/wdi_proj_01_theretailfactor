@@ -26,10 +26,12 @@ ActiveRecord::Schema.define(version: 20141022165710) do
   end
 
   create_table "searches", force: true do |t|
-    t.integer "user_id"
-    t.text    "city"
-    t.text    "state"
-    t.text    "zip"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "city"
+    t.text     "state"
+    t.text     "zip"
   end
 
   add_index "searches", ["user_id"], name: "index_searches_on_user_id", using: :btree
