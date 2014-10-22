@@ -8,17 +8,19 @@ LIST OF MODELS & THEIR DATA FIELDS
 :username
 :password
 :email
-:profile_pic
+:picture
 
 ** SEARCH **
 :id
 :user_id
-:propcriteria_id
-:target_id
-:market_id
+:name
+:description
+:date_created
+:date_modified
 
 ** PROPCRITERIA **
 :id
+:search_id
 :radius_limit
 :sf_min
 :sf_max
@@ -29,10 +31,12 @@ LIST OF MODELS & THEIR DATA FIELDS
 
 ** TARGET **
 :id
+:search_id
 :location
 
 ** MARKET **
 :id
+:search_id
 :area
 
 ** PROPERTY **
@@ -50,30 +54,32 @@ QUESTIONS TO WORK THROUGH
     :zipcode
     :neighborhood
 
-  Then give market.area and target.location an address value as submitted by the user? So Address doesn't ever actually save anything - just passes its structure and supplied values to the correct model fields?
+    Then give market.area and target.location an address value as submitted by the user? So Address doesn't ever actually save anything - just passes its structure and supplied values to the correct model fields?
 
-  So market.area & target.location = [
-    street="street_string",
-    city="city_string",
-    state="state_string",
-    zipcode="zipcode_string",
-    neighborhood="neighborhood_string"
-    longitude=long_float
-    latitude=lat_float
-  ]
+    So market.area & target.location = [
+      street="street_string",
+      city="city_string",
+      state="state_string",
+      zipcode="zipcode_string",
+      neighborhood="neighborhood_string"
+      longitude=long_float
+      latitude=lat_float
+    ]
 
-  Required values:
-    city+state OR zipcode
+    Required values:
+      city+state OR zipcode
 
-  Have longitude and latitude values returned by running geocoder process?
+    Have longitude and latitude values returned by running geocoder process?
 
-  >> Look up how to set parameter requirements as an either-or.
-  >> Need to find a geocoder gem.
+    >> Look up how to set parameter requirements as an either-or.
+    >> Need to find a geocoder gem.
+
+? Use inclusion in models
 
 
 ASSOCIATIONS
 ================================================
-https://docs.google.com/drawings/d/1TJ3znDtEZdmHfY1-UrZU4xTwd9SIDYrlGYYNCKXC7Mw/edit?usp=sharing
+Diagram of models & associations: https://docs.google.com/drawings/d/1TJ3znDtEZdmHfY1-UrZU4xTwd9SIDYrlGYYNCKXC7Mw/edit?usp=sharing
 
 
 
