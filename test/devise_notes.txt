@@ -1,6 +1,7 @@
 
-IF USING LOGIN VIRTUAL ATTRIBUTE FOR USER AUTH OUTSIDE OF USER MODEL, USE CODE:
-
+IF USING LOGIN VIRTUAL ATTRIBUTE FOR USER AUTH
+OUTSIDE OF USER MODEL, USE CODE:
+--------------------------------------------------------------
   def login=(login)
     @login = login
   end
@@ -8,3 +9,8 @@ IF USING LOGIN VIRTUAL ATTRIBUTE FOR USER AUTH OUTSIDE OF USER MODEL, USE CODE:
   def login
     @login || self.username || self.email
   end
+
+
+CREATE VALIDATIONS FOR USERNAME IN USER MODEL
+--------------------------------------------------------------
+  validates :username, presence: true, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }
