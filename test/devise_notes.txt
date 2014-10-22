@@ -18,6 +18,11 @@ CHANGE INVALID ERROR MSG
   Change the login label from “invalid: email or password" to "invalid: login or password" in config/locales/devise.en.yml.
 
 
+RESET PASSWORD EMAIL
+--------------------------------------------------------------
+  Need to test this and make sure it's working.
+
+
 ==============================================================
 COMPLETED
 ==============================================================
