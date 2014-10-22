@@ -13,4 +13,9 @@
 
 ---- 10/22/14 @ 11:05 AM ----
 * Got simple devise user model and devise views working. Going to merge into master branch and deploy to heroko.
+* Merged branches.
+* Pushed to origin master.
+* Ran heroko run rake db:migrate
+* Pushed to heroku master.
+
 
