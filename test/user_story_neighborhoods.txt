@@ -1,0 +1,18 @@
+USER:
+* Provide a market location (city+state AND/OR zipcode)
+* View a list of neighborhoods in the market (search index view)
+* Select a neighborhood and see demographics for that neighborhood (result show view)
+* Option to save the neighborhood (create new neighborhood & save)
+* View list of all saved neighborhoods (neighborhood index view)
+* View details of saved neighborhood (show neighborhood view)
+
+
+APP:
+
+
+
+
+NICE TO HAVE:
+* Show some basic demo info for each neighborhood in index view
+* Provide 'save' button for each neighborhood directly in index view.
+* Map of neighborhoods
