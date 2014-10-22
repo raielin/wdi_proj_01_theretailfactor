@@ -17,5 +17,7 @@
 * Pushed to origin master.
 * Ran heroko run rake db:migrate
 * Pushed to heroku master.
+* All looks ok with git.
+* Hit issue with the devise sign-up view on heroku.
 
 
