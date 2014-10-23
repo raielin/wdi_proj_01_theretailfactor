@@ -27,3 +27,7 @@
 * Working on creating the right queries.
 * Checking out new branch modrubillow to test modified rubillow code for queries.
 
+--- 10/23/14 @ 1:43 AM ---
+* Merged modrubillow with master.
+* modrubillow not yet deleted.
+
