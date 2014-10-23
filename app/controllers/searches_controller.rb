@@ -1,12 +1,11 @@
 class SearchesController < ApplicationController
-  # Showing a form to create a new search
+  # before_action :authenticate_user!, except: [:show, :index]
+
   def new
     @search = Search.new
   end
 
-  # Creating a new search
   def create
-    # Make a new search and now do something
     # TODO: Associate the current user with this
     @search = Search.new(search_params)
     if @search.save
@@ -24,6 +23,6 @@ class SearchesController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:name, :description)
+    params.require(:search).permit(:city, :state, :zip)
   end
 end
