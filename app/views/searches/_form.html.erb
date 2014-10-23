@@ -1,6 +1,7 @@
 <!-- TODO: Allow user to elect to enter zipcode instead of city+state.  -->
 
 <%= form_for @search do |f| %>
+  <%= f.hidden_field :user_id %>
   <div class="field">
     <%= f.text_field :city, placeholder: "City" %>
   </div>
