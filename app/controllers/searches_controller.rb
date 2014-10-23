@@ -1,14 +1,20 @@
 class SearchesController < ApplicationController
   # before_action :authenticate_user!, except: [:show, :index]
 
+  def index
+    @searches = Search.all
+  end
+
   def new
-    @search = Search.new
+    @search = Search.new(user_id: params[:id])
   end
 
   def create
     # TODO: Associate the current user with this
     @search = Search.new(search_params)
     if @search.save
+      @search.results
+
       redirect_to @search
     else
       render :new
@@ -22,7 +28,8 @@ class SearchesController < ApplicationController
 
   private
 
+  # TODO: Add zip to params
   def search_params
-    params.require(:search).permit(:city, :state, :zip)
+    params.require(:search).permit(:city, :state, :user_id)
   end
 end
