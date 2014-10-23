@@ -41,7 +41,7 @@ gem 'rails_12factor', group: :production
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Zillow API wrapper
-gem 'rubillow', :path => "~/Dropbox/GA/WDI-Fall-2014/gem_files/rubillow_master"
+gem 'rubillow'
 
 # Required for user authentication
 gem 'devise'
