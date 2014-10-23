@@ -21,8 +21,8 @@ class User < ActiveRecord::Base
   end
 
   validates :username,
-    presence: true,
+    presence: {true, message: "Username is required."},
     length: {maximum: 255},
-    uniqueness: { case_sensitive: false },
-    format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }
+    uniqueness: { case_sensitive: false, message: "Sorry. This username has been taken. Please supply a unique username." },
+    format: { with: /\A[a-zA-Z0-9]*\z/, message: "Your username can only contain letters and numbers." }
 end
