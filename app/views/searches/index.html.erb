@@ -1,0 +1,23 @@
+<h2>Your Searches</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>State</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @searches.each do |search| %>
+      <tr>
+        <td><%= search.city %></td>
+        <td><%= search.state %></td>
+        <td><%= link_to 'Show', search %></td>
+        <td><%= link_to 'Remove', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<!-- TODO: Add column showing total results (neighborhoods) count -->
