@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Searches.delete_all
+Search.delete_all
 
 searches_list = [
   ["Boston", "MA", 1],
@@ -17,5 +17,5 @@ searches_list = [
 ]
 
 searches_list.each do |city, state, user_id|
-  search.create(city: city, state: state, user_id: user_id)
+  Search.create(city: city, state: state, user_id: user_id)
 end
