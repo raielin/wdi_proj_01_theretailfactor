@@ -1,5 +1,27 @@
 <h1>Neighborhoods in <%= @search.city.titleize %>, <%= @search.state.upcase%></h1>
 
+<table>
+  <thead>
+    <tr>
+      <th>Neighborhoods</th>
+      <th>Population</th>
+      <th>Other Demographics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @neighborhoods.each do |name| %>
+      <tr>
+        <!-- TODO: add basic demo info in additional coluns. -->
+        <!-- TODO: add link or checkbox to save neighborhood. -->
+        <!-- TODO: 15 results/page -->
+        <td><%= name.titleize %></td>
+        <td>some population number</td>
+        <td>more basic demographics</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
 
 <%= link_to 'Back', searches_path %>
 <br>
