@@ -31,6 +31,12 @@ class SearchesController < ApplicationController
     end
   end
 
+  def destroy
+    @search.destroy
+    # TODO: Add destroy confirmation notice.
+    redirect_to searches_path
+  end
+
   private
 
   # TODO: Add zip to params
