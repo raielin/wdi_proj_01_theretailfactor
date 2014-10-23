@@ -21,3 +21,9 @@
 * Hit issue with the devise sign-up view on heroku.
 
 
+--- 10/22/14 @ 9:03 PM ---
+* On master branch.
+* All changes are committed and pushed to origin and heroku.
+* Working on creating the right queries.
+* Checking out new branch modrubillow to test modified rubillow code for queries.
+
