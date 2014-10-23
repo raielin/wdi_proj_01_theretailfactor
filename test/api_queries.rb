@@ -28,16 +28,19 @@ end
 
 # http://www.zillow.com/howto/api/GetRegionChildren.htm
 
-neighborhoods = Rubillow::Neighborhood.region_children({state:"MA", city: "Boston", childtype: "neighborhood"})
-binding.pry
-if neighborhoods.success?
-  neighborhoods.regions.each do |region|
-    puts region.id
-  end
-else
-  puts false
-end
+query = Rubillow::Neighborhood.region_children({state:"MA", city: "Boston", childtype: "neighborhood"})
+# if query.success?
+#   query.regions.each do |region|
+#     puts region.neighborhood
+#   end
+# else
+#   puts false
+# end
 
+neighborhoods = []
+query.regions.each do |region|
+  neighborhoods << region.neighborhood
+end
 
 =begin
 
