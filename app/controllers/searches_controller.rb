@@ -10,11 +10,8 @@ class SearchesController < ApplicationController
   end
 
   def create
-    # TODO: Associate the current user with this
     @search = Search.new(search_params)
     if @search.save
-      @search.results
-
       redirect_to @search
     else
       render :new
