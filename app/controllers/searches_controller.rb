@@ -1,6 +1,6 @@
 class SearchesController < ApplicationController
   # before_action :authenticate_user!, except: [:show, :index]
-  # before_action :results, only: :show
+  before_action :find_search, only: [:show, :destroy]
 
   def index
     @searches = Search.all
@@ -21,7 +21,6 @@ class SearchesController < ApplicationController
 
   # Looking at results for a search
   def show
-    @search = Search.find(params[:id])
     # TODO: Set up search method so this code doesn't have to go here? i.e. something like:
     # @search.results
     @results = Rubillow::Neighborhood.region_children({state: @search.state, city: @search.city, childtype: "neighborhood"})
@@ -38,6 +37,10 @@ class SearchesController < ApplicationController
   end
 
   private
+
+  def find_search
+    @search = Search.find(params[:id])
+  end
 
   # TODO: Add zip to params
   def search_params
