@@ -2,15 +2,16 @@ class Search < ActiveRecord::Base
   belongs_to :user
 
 
-  # TODO: Create method to run search.
+  # TODO: Not sure if this is the right way to set it up - define method in model and call in search controller action?
   # TODO: Add zip as optional field.
-  def self.results(city, state)
-    Rubillow::Neighborhood.region_children({state: state, city: city, childtype: "neighborhood"})
-    @neighborhoods = []
-    query.regions.each do |region|
-      @neighborhoods << region.neighborhood
-    end
-  end
+  # TODO: Validate input
+  # def results
+  #   @results = Rubillow::Neighborhood.region_children({state: @self.state, city: @self.city, childtype: "neighborhood"})
+  #   @neighborhoods = []
+  #   @results.regions.each do |region|
+  #     @neighborhoods << region.neighborhood
+  #   end
+  # end
 
 
 end
