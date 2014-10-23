@@ -1,5 +1,0 @@
---no-private
-lib/**/*.rb
--
-LICENSE
-CHANGELOG.md
