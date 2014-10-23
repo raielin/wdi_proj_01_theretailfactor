@@ -41,7 +41,7 @@ gem 'rails_12factor', group: :production
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Zillow API wrapper
-gem 'rubillow'
+gem 'rubillow', '0.0.7', :path => 'vendor/cache'
 
 # Required for user authentication
 gem 'devise'
