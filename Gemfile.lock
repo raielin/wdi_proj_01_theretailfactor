@@ -1,5 +1,5 @@
 PATH
-  remote: vendor/cache
+  remote: vendor/gems
   specs:
     rubillow (0.0.7)
       nokogiri (~> 1.5)
