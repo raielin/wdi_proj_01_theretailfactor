@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_many :searches, dependent: :destroy
+  has_many :results, through: :searches
   # has_many :properties # TODO: Implement soon
 
   # Include default devise modules. Others available are:
