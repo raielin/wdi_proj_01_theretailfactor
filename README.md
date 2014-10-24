@@ -1,5 +1,5 @@
 # the retail factor...
-https://obscure-badlands-8598.herokuapp.com
+https://theretailfactor.herokuapp.com
 
 _(a work in progress...)_
 
