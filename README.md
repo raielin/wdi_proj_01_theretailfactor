@@ -185,11 +185,11 @@ The page has the following in formation:
 - Use paperclip gem for user profile pic.
 
 
-### a first attempt at diagramming models
+### A first Attempt at Diagramming Models
 ![Models Diagram](/test/models_diagram_OLD.jpg)
 
 
-### misc. process & planning resources
+### Misc. Process & Planning Resources
 * notes in /test/*.*
 * [trello board](https://trello.com/b/vwdbdeqr/wdi-project-1)
 * modification to devise to allow login via username or email: [devise how-to](https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address)
