@@ -1,17 +1,14 @@
 # the retail factor...
 https://obscure-badlands-8598.herokuapp.com
+
 _(a work in progress...)_
 
 ## the initial intended concept
 
-**THE IDEAL USER**
-======================================================
-User: Jackie
-Status: New User
-Registration: Not Registered
-If not registered, sign up? (Y/N): Y
+##### User Story
+------------------------------------------------------
 
-**EXPLORING SITE & SEARCHING**
+EXPLORING SITE & PERFORMING SEARCHES
 ------------------------------------------------------
 Jackie wants to look up houses for sale.  She loves Anthropologie.
 
@@ -74,7 +71,7 @@ Each listing includes a photo, the address, basic property info, a static map im
 In either case, saving requires Jackie to sign in or sign up. The page explains that this is so that her history can be saved and recalled for her. She decides to sign up.
 
 
-**SIGNING UP FOR NEW ACCOUNT**
+SIGNING UP FOR NEW ACCOUNT
 ------------------------------------------------------
 Jackie clicks the Sign Up button. She is directed to the signup form page.
 ```
@@ -95,7 +92,7 @@ Jackie fills in the form and clicks submit. (Ideally, would like to include an e
 She is now redirected back to her previous search results and sees that she's now logged in and able to save specific properties as well as the full search query.
 
 
-**SAVING PROPERTIES & SEARCHES**
+SAVING PROPERTIES & SEARCHES
 ------------------------------------------------------
 Next to each property is a greyed out heart. By clicking on the checkmark it is 'activated' (in color) and is saved into Jackie's history. Any property with a colored heart indicates it is currently in Jackie's saved properties list. Clicking a colored heart greys it out again and removes it from her saved properties.
 
@@ -115,7 +112,7 @@ Jackie fills in the appropriate fields and clicks submit. She is returned to the
 Hovering over the header, she sees that she's able to edit the Search Name and Description right from this view page. When she clicks on either text, a text box with the current text appears where she can type whatever she wants. Hitting enter or navigating away from the text box automatically saves any changes she made.
 
 
-**USER PROFILE**
+USER PROFILE
 ------------------------------------------------------
 After saving her search query and 'favoriting' some properties, Jackie goes to her User Profile where she can view what she saved.
 
@@ -169,10 +166,8 @@ The page has the following in formation:
 
       Link to All saved properties
 
-
-======================================================
-**TO COME BACK TO LATER**
-======================================================
+TO COME BACK TO LATER
+------------------------------------------------------
 
 - Saved searches index view
 - Saved properties index view
@@ -191,18 +186,17 @@ The page has the following in formation:
 - Use paperclip gem for user profile pic.
 
 
-
 ## a first attempt at diagramming models
 ![Models Diagram](/test/models_diagram_OLD.jpg)
 
 
 ## misc. process & planning resources
 * notes in /test/*.*
-* [trello board][https://trello.com/b/vwdbdeqr/wdi-project-1]
-* modification to devise to allow login via username or email: [devise how-to][https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address]
-* model diagram with [google drawing][https://docs.google.com/drawings/d/1TJ3znDtEZdmHfY1-UrZU4xTwd9SIDYrlGYYNCKXC7Mw/edit?usp=sharing]
-* zillow api documentation [here][http://www.zillow.com/howto/api/APIOverview.htm]
-* rubillow gem: documentation [here][http://www.rubydoc.info/gems/rubillow], github repo [here][https://github.com/synewaves/rubillow]
+* [trello board](https://trello.com/b/vwdbdeqr/wdi-project-1)
+* modification to devise to allow login via username or email: [devise how-to](https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address)
+* model diagram with [google drawing](https://docs.google.com/drawings/d/1TJ3znDtEZdmHfY1-UrZU4xTwd9SIDYrlGYYNCKXC7Mw/edit?usp=sharing)
+* zillow api documentation [here](http://www.zillow.com/howto/api/APIOverview.htm)
+* rubillow gem: documentation [here](http://www.rubydoc.info/gems/rubillow), github repo [here](https://github.com/synewaves/rubillow)
 
 
 ## current user model under modified concept
