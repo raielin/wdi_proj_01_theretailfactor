@@ -4,12 +4,12 @@ https://obscure-badlands-8598.herokuapp.com
 _(a work in progress...)_
 
 ## the initial intended concept
-
-##### User Story
 ------------------------------------------------------
 
-EXPLORING SITE & PERFORMING SEARCHES
-------------------------------------------------------
+### User Story
+
+#### Exploring Site & Performing Searches
+
 Jackie wants to look up houses for sale.  She loves Anthropologie.
 
 Hmmm... Perhaps Jackie should search for houses that are closest to an Anthro location!
@@ -71,8 +71,8 @@ Each listing includes a photo, the address, basic property info, a static map im
 In either case, saving requires Jackie to sign in or sign up. The page explains that this is so that her history can be saved and recalled for her. She decides to sign up.
 
 
-SIGNING UP FOR NEW ACCOUNT
-------------------------------------------------------
+#### Signing Up For New Account
+
 Jackie clicks the Sign Up button. She is directed to the signup form page.
 ```
   Required fields:
@@ -92,8 +92,8 @@ Jackie fills in the form and clicks submit. (Ideally, would like to include an e
 She is now redirected back to her previous search results and sees that she's now logged in and able to save specific properties as well as the full search query.
 
 
-SAVING PROPERTIES & SEARCHES
-------------------------------------------------------
+#### Saving Properties & Searches
+
 Next to each property is a greyed out heart. By clicking on the checkmark it is 'activated' (in color) and is saved into Jackie's history. Any property with a colored heart indicates it is currently in Jackie's saved properties list. Clicking a colored heart greys it out again and removes it from her saved properties.
 
 Jackie wants to save the search query so she can run it again next time without having to re-enter her search criteria.
@@ -112,8 +112,8 @@ Jackie fills in the appropriate fields and clicks submit. She is returned to the
 Hovering over the header, she sees that she's able to edit the Search Name and Description right from this view page. When she clicks on either text, a text box with the current text appears where she can type whatever she wants. Hitting enter or navigating away from the text box automatically saves any changes she made.
 
 
-USER PROFILE
-------------------------------------------------------
+#### User Profile
+
 After saving her search query and 'favoriting' some properties, Jackie goes to her User Profile where she can view what she saved.
 
 The User Profile link is in the top navigation bar. She knows she's logged in because it says 'jackie451's Profile'. (Ideally, should include a 'not jackie451? click here to sign in as a different user.' function.) She clicks on the link and is directed to her Profile page.
@@ -166,8 +166,7 @@ The page has the following in formation:
 
       Link to All saved properties
 
-TO COME BACK TO LATER
-------------------------------------------------------
+#### To Come Back To
 
 - Saved searches index view
 - Saved properties index view
@@ -186,11 +185,11 @@ TO COME BACK TO LATER
 - Use paperclip gem for user profile pic.
 
 
-## a first attempt at diagramming models
+### a first attempt at diagramming models
 ![Models Diagram](/test/models_diagram_OLD.jpg)
 
 
-## misc. process & planning resources
+### misc. process & planning resources
 * notes in /test/*.*
 * [trello board](https://trello.com/b/vwdbdeqr/wdi-project-1)
 * modification to devise to allow login via username or email: [devise how-to](https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address)
@@ -199,7 +198,8 @@ TO COME BACK TO LATER
 * rubillow gem: documentation [here](http://www.rubydoc.info/gems/rubillow), github repo [here](https://github.com/synewaves/rubillow)
 
 
-## current user model under modified concept
+## modified concept & current user model
+------------------------------------------------------
 
 **PHASE I**
 * Provides a market location (city+state AND/OR zipcode)
