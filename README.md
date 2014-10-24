@@ -3,9 +3,8 @@ https://obscure-badlands-8598.herokuapp.com
 
 _(a work in progress...)_
 
-------------------------------------------------------
+
 ## the initial intended concept
-------------------------------------------------------
 
 ### User Story
 
@@ -197,9 +196,7 @@ The page has the following in formation:
 * zillow api documentation [here](http://www.zillow.com/howto/api/APIOverview.htm)
 * rubillow gem: documentation [here](http://www.rubydoc.info/gems/rubillow), github repo [here](https://github.com/synewaves/rubillow)
 
-------------------------------------------------------
 ## modified concept & current user model
-------------------------------------------------------
 
 ### Phase I
 * User provides a market location. (city+state)
