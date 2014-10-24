@@ -197,7 +197,7 @@ The page has the following in formation:
 * rubillow gem: documentation [here](http://www.rubydoc.info/gems/rubillow), github repo [here](https://github.com/synewaves/rubillow)
 
 ## modified concept & current user model
-[active trello board](https://trello.com/b/2Iv1WZkt/wdi-project-1-new)
+[active trello board](https://trello.com/b/2Iv1WZkt/the-retail-factor-wdi-project-1)
 
 ### Phase I
 * User provides a market location. (city+state)
