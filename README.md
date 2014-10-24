@@ -197,6 +197,7 @@ The page has the following in formation:
 * rubillow gem: documentation [here](http://www.rubydoc.info/gems/rubillow), github repo [here](https://github.com/synewaves/rubillow)
 
 ## modified concept & current user model
+[active trello board](https://trello.com/b/2Iv1WZkt/wdi-project-1-new)
 
 ### Phase I
 * User provides a market location. (city+state)
@@ -226,4 +227,3 @@ The page has the following in formation:
 * User has option to select up to 5 retail locations to see side-by-side comparison of demographics.
 * User has option to select more than one retailer.
 * User can input a zipcode by iteslf or with a city+state to specify desired market location.
-.
