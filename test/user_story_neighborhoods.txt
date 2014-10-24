@@ -1,19 +1,24 @@
-USER:
-* Provide a market location (city+state AND/OR zipcode)
-* View a list of neighborhoods in the market (search index view)
-* Select a neighborhood and see demographics for that neighborhood (result show view)
+USER STORY
+
+PHASE I
+* Provides a market location (city+state AND/OR zipcode)
+* Views a list of neighborhoods in the market (search index view)
+* Selects a neighborhood to see demographics for that neighborhood (result show view)
+
+PHASE II
 * Option to save the neighborhood (create new neighborhood & save)
-* View list of all saved neighborhoods (neighborhood index view)
-* View details of saved neighborhood (show neighborhood view)
+* Views list of all saved neighborhoods (neighborhood index view)
+* Views details of saved neighborhood (show neighborhood view)
 
+PHASE III
+* After providing market location, sees a list of Anthropologie stores in that market.
+* Selects a specific Anthro location
+* Sees a list of neighborhoods for that immediate location.
 
-APP:
+PHASE IV
+* Selects a specific retail store from dropdown menu, i.e. Anthropologie, Club Monaco, etc. prior to specifying market.
+* Option to select specific demographic data sets to return
 
-
-
-
-NICE TO HAVE:
-* Show some basic demo info for each neighborhood in index view
-* Provide 'save' button for each neighborhood directly in index view.
-* Map of neighborhoods
-* Validations of input fields
+PHASE V
+* Selects specific retail location from an interactive map of all locations in specified market.
+* Option to select up to 5 retail locations to see side-by-side comparison of demographics.
