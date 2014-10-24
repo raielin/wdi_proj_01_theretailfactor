@@ -3,6 +3,7 @@ https://obscure-badlands-8598.herokuapp.com
 
 _(a work in progress...)_
 
+------------------------------------------------------
 ## the initial intended concept
 ------------------------------------------------------
 
@@ -119,15 +120,15 @@ After saving her search query and 'favoriting' some properties, Jackie goes to h
 The User Profile link is in the top navigation bar. She knows she's logged in because it says 'jackie451's Profile'. (Ideally, should include a 'not jackie451? click here to sign in as a different user.' function.) She clicks on the link and is directed to her Profile page.
 
 The page has the following in formation:
-  First Name (if it exists)
-  Last Name (if it exists)
-  Username
-  Link to Change Password
-  Saved Searches
-  Saved Properties
-  Link to Delete Account
-
-  **_Page Layout:_**
+  * First Name (if it exists)
+  * Last Name (if it exists)
+  * Username
+  * Link to Change Password
+  * Saved Searches
+  * Saved Properties
+  * Link to Delete Account
+```
+  Page Layout:
     USERNAME (HEADER)
       first_name last_name (Subheader)
       update password link (small text)
@@ -165,9 +166,8 @@ The page has the following in formation:
             Heart icon - click to grey out heart and remove property from saved properties.
 
       Link to All saved properties
-
+```
 #### To Come Back To
-
 - Saved searches index view
 - Saved properties index view
 - Ability to edit Saved Search info directly in Search Results view
@@ -197,7 +197,7 @@ The page has the following in formation:
 * zillow api documentation [here](http://www.zillow.com/howto/api/APIOverview.htm)
 * rubillow gem: documentation [here](http://www.rubydoc.info/gems/rubillow), github repo [here](https://github.com/synewaves/rubillow)
 
-
+------------------------------------------------------
 ## modified concept & current user model
 ------------------------------------------------------
 
