@@ -2,11 +2,18 @@ class ResultsController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    @results = Rubillow::Neighborhood.region_children({state: @search.state, city: @search.city, childtype: "neighborhood"})
+    @result = Rubillow::Neighborhood.region_children({state: @search.state, city: @search.city, childtype: "neighborhood"})
     @neighborhoods = []
-    @results.regions.each do |region|
+    @result.regions.each do |region|
       @neighborhoods << region.neighborhood
     end
   end
+
+  private
+
+  def result_params
+    params.require(:result).permit(:search_id)
+  end
+
 
 end
