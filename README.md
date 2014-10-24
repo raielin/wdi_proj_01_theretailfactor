@@ -185,7 +185,7 @@ The page has the following in formation:
 - Use paperclip gem for user profile pic.
 
 
-### A first Attempt at Diagramming Models
+### A First Attempt at Diagramming Models
 ![Models Diagram](/test/models_diagram_OLD.jpg)
 
 
@@ -201,30 +201,30 @@ The page has the following in formation:
 ## modified concept & current user model
 ------------------------------------------------------
 
-**PHASE I**
+### Phase I
 * User provides a market location. (city+state)
 * User sees a list of neighborhoods in the market. (search index view)
 * User can select a neighborhood to see demographics for that neighborhood. (result show view)
 
-**PHASE II**
+### Phase II
 * User has option to save the neighborhood. (create new neighborhood & save)
 * User can view list of all saved neighborhoods. (neighborhood index view)
 * User can view details of saved neighborhoods. (show neighborhood view)
 
-**PHASE III**
+### Phase III
 * User provides a market location.
 * User sees a list of Anthropologie stores in that market.
 * User can select a specific Anthro location.
 * User sees a list of neighborhoods for that immediate location.
 
-**PHASE IV**
+### Phase IV
 * User selects a retailer from dropdown menu, i.e. Anthropologie, Club Monaco, etc.
 * User provides a market location.
 * User sees a list of stores for the retailer they initially selected.
 * User has option to select specific categories of data sets to return.
 * All other functionality remains.
 
-**PHASE V**
+### Phase V
 * User selects specific retail location from an interactive map of all locations in specified market.
 * User has option to select up to 5 retail locations to see side-by-side comparison of demographics.
 * User has option to select more than one retailer.
