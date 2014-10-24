@@ -227,3 +227,9 @@ The page has the following in formation:
 * User has option to select up to 5 retail locations to see side-by-side comparison of demographics.
 * User has option to select more than one retailer.
 * User can input a zipcode by iteslf or with a city+state to specify desired market location.
+* User can upload a profile picture.
+
+### Phase VI
+* Write validations for user inputs.
+* Test edge cases - rspec.
+* Refine user authentication so login is required only to save searches & results.
